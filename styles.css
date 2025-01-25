@@ -1,0 +1,59 @@
+body {
+    background-image: url('background.jpg'); /* 背景に写真を設定 */
+    background-size: cover;
+    font-family: 'Noto Serif JP', serif; /* 和風なフォントを使用 */
+    color: #333; /* テキストカラーを落ち着いた色に */
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 248, 220, 0.9); /* 和風な色に */
+    padding: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加して立体感を演出 */
+    text-align: center;
+    z-index: 1000;
+    transition: top 0.3s; /* スクロール時のアニメーション */
+}
+.navbar.hidden {
+    top: -100px; /* ナビゲーションバーを隠す */
+}
+.navbar button {
+    background-color: #8B4513; /* 和風な色に */
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    margin: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.navbar button:hover {
+    background-color: #A0522D; /* ホバー時の色を変更 */
+}
+.container {
+    background-color: rgba(255, 248, 220, 0.9); /* 背景を和風な色に */
+    padding: 20px;
+    margin: 80px 20px 20px 20px; /* 上部のマージンを調整 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加して立体感を演出 */
+}
+h1, h2 {
+    text-align: center;
+    color: #8B4513; /* 見出しを和風な色に */
+}
+ul {
+    list-style-type: disc; /* 箇条書きのスタイルを変更 */
+    padding-left: 20px;
+}
+p, ul {
+    margin-bottom: 20px;
+}
+#map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#map {
+    border: 0;
+}

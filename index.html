@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>超おしゃれで和風なサイト</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script defer src="scripts.js"></script>
+    </head>
+<body>
+    <div class="navbar" id="navbar">
+        <button onclick="scrollToSection('philosophy')">事業所理念</button>
+        <button onclick="scrollToSection('services')">サービス内容</button>
+        <button onclick="scrollToSection('daily-schedule')">一日の流れ</button>
+        <button onclick="scrollToSection('appeal-points')">アピールポイント</button>
+        <button onclick="scrollToSection('contact')">問い合わせ先</button>
+        <button onclick="scrollToSection('staff')">スタッフ紹介</button>
+        <button onclick="scrollToSection('facility')">施設紹介</button>
+        <button onclick="scrollToSection('hours')">営業時間</button>
+        <button onclick="scrollToSection('service-area')">サービス提供地域</button>
+        <button onclick="scrollToSection('guide')">ご利用案内</button>
+    </div>
+    <div class="container">
+        <h1>ぼたん地域密着型介護施設</h1>
+        <h2 id="philosophy">事業所理念</h2>
+        <p>自宅に近い環境で生活リハビリを行いながら専門職による健康マッサージ、複数のトレーニングマシンによる運動療法、複数の機器による物理療法、レクリエーションなどによる認知症予防活動などがお楽しみいただける健康志向のくつろぎ空間を提供しています。
+            少人数のため、提供時間には柔軟に対応しています。</p>
+        
+        <h2 id="services">サービス内容</h2>
+        <p>高齢者向きのトレーニングマシンが複数あり、運動をしたい方も満足いただける施設です。
+            またなにより、看護師による健康相談、リハビリが出来ます。あん摩マッサージ指圧師によるマッサージを受けれます。
+            そしてウォーターベッドやメドマーなどのマッサージ機器も充実しています。新設したお風呂は、完全個浴にてご利用できます。
+            利用時間は短時間にも対応しております。運動とリハビリ、癒しの時間を過ごしてください。</p>
+        
+        <h2 id="daily-schedule">一日の流れ</h2>
+        <p>ここに一日の流れを記載します。</p>
+        
+        <h2 id="appeal-points">アピールポイント</h2>
+        <p>ここにアピールポイントを記載します。</p>
+        
+        <h2 id="contact">問い合わせ先</h2>
+        <p>Tel: ここに電話番号を記載します。</p>
+        <p>アド: ここにアドレスを記載します。</p>
+        <p>Fax: ここにFAX番号を記載します。</p>
+        
+        <h2 id="staff">スタッフ紹介</h2>
+        <p>豊臣秀吉さん</p>
+        <p>明智光秀さん</p>
+        <p>織田信長さん</p>
+        <p>小林製菓さん</p>
+        <p>サンリオさん</p>
+        <p>任天堂さん</p>
+        <h2 id="facility">施設紹介</h2>
+        <p>ここに施設紹介を記載します。</p>
+        
+        <h2 id="hours">営業時間</h2>
+        <p>ここに営業時間を記載します。</p>
+        
+        <h2 id="service-area">サービス提供地域</h2>
+        <p>ここにサービス提供地域を記載します。</p>
+        <div id="map-container">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22366.308598544663!2d130.3336466567969!3d33.55930841468388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419365fa648547%3A0x3fb6461420a7273c!2z44OH44Kk44K144O844OT44K544G844Gf44KT!5e0!3m2!1sja!2sjp!4v1737808378430!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h2 id="guide">ご利用案内</h2>
+        <p>受け入れ可能人数:</p>
+        <canvas id="capacityChart" width="400" height="200"></canvas>
+        <p>※最新の空き状況については、お電話（092-846-5151）にてお気軽にお問い合わせください。</p>
+        
+        <h2>サービス内容</h2>
+        <ul>
+            <li>高齢者向けトレーニングマシンの充実</li>
+            <li>看護師による健康相談・リハビリテーション</li>
+            <li>あん摩マッサージ指圧師によるマッサージ</li>
+            <li>ウォーターベッド、メドマーなどのマッサージ機器</li>
+            <li>完全個浴のお風呂</li>
+            <li>短時間利用への対応</li>
+        </ul>
+        
+        <h2>スタッフ紹介</h2>
+        <p>従業員の男女比: 男性2名、女性5名</p>
+        <ul>
+            <li>複数名の看護師による安心のサポート</li>
+            <li>経験豊富なあん摩マッサージ指圧師・鍼灸師による機能訓練・マッサージ</li>
+            <li>アットホームな雰囲気</li>
+        </ul>
+        
+        <h2>利用者の声</h2>
+        <ul>
+            <li>和気あいあいとした雰囲気</li>
+            <li>運動・レクリエーションの実施</li>
+            <li>マッサージ機器による癒しの提供</li>
+        </ul>
+    </div>
+</body>
+</html>
