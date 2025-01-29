@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['最大受け入れ人数', '現在の受け入れ可能人数'],
+            labels: ['最大受け入れ人数', '現在の受け入れ人数'],
             datasets: [{
                 label: '人数',
                 data: [156, 63],

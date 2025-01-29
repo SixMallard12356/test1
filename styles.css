@@ -1,6 +1,8 @@
 body {
     background-image: url('background.jpg'); /* 背景に写真を設定 */
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 背景画像を固定 */
     font-family: 'Noto Serif JP', serif; /* 和風なフォントを使用 */
     color: #333; /* テキストカラーを落ち着いた色に */
 }
@@ -38,6 +40,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加して立体感を演出 */
 }
+.header {
+    background-image: url('header-background.jpg'); /* タイトルの背景画像を設定 */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+    color: white; /* タイトルのテキストカラーを白に */
+}
 h1, h2 {
     text-align: center;
     color: #8B4513; /* 見出しを和風な色に */
@@ -56,4 +66,37 @@ p, ul {
 }
 #map {
     border: 0;
+}
+.staff-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列のグリッドレイアウト */
+    gap: 20px; /* ボックス間の隙間を広げる */
+    margin: 20px 0; /* 上下のマージン */
+}
+.staff-box {
+    background-color: rgba(255, 255, 255, 0.9); /* 背景色を白に変更 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を強調して立体感を演出 */
+    text-align: center;
+    font-size: 18px; /* フォントサイズを大きく */
+    color: #333; /* テキストカラーを濃く */
+    transition: transform 0.3s; /* ホバー時のアニメーション */
+}
+.staff-box:hover {
+    transform: scale(1.05); /* ホバー時に拡大 */
+}
+
+/* スマホなどの小さい画面向けのスタイル */
+@media (max-width: 600px) {
+    .navbar button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .staff-container {
+        grid-template-columns: 1fr; /* 1列のグリッドレイアウト */
+    }
+    .container {
+        margin: 60px 10px 10px 10px; /* 上部のマージンを調整 */
+    }
 }
